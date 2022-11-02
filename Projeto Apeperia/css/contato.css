@@ -1,0 +1,33 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--back-claro);
+    border-top: 2px solid var(--branco);
+
+}
+.contato__titulo {
+    color: var(--vermelho-forte);
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem;
+}
+.contato__texto {
+    margin-bottom: 2em;
+    color: #000000;
+}
+.contato__botao:hover {
+    font-weight: 700;
+}
+.contato__botao {
+    color: var(--vermelho-forte);
+    border: 2px solid var(--vermelho-forte);
+    border-color: var(--vermelho-medio);
+    margin: 0 auto;
+}

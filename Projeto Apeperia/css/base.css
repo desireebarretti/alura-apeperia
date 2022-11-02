@@ -1,0 +1,43 @@
+:root { /*mais especifico e mais forte que o proprio do html*/
+    --branco: #FFF;
+    --back-claro: #e9ecee;
+    --back-medio: #8d99ae;
+    --vermelho-forte: #D90429;
+    --vermelho-medio: #EF233C;
+    --cinza-escuro: #2B2D42;
+    --cinza-claro: #F7F4F4;
+    --cinza-medio: #8D99AE;
+        
+    --fonte-link: #0084FF;
+    --fonte-cinza: #666;
+    --bg-rodape: #333;
+
+    --planos-cartao-start: #fcbf49;
+    --planos-cartao-ultra: #d62828;
+    --planos-cartao-mega: #F77f00;
+
+    --montserrat: 'Montserrat', san-serif; 
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+.botao {
+    border: 2.5px solid;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}

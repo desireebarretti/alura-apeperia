@@ -1,0 +1,42 @@
+.cabecalho {
+    color: var(--branco);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .75rem; /*se baseia na font size do elemento html (maior na hierarquia)*/
+    padding-bottom: .75rem;
+    border-bottom: 1px solid var(--branco);
+    position: absolute;
+}
+.cabecalho__logo {
+    margin-bottom: 1rem;
+}
+.cabecalho__navegacao {
+    text-align: center;
+    padding-top: 1em;
+}
+.cabecalho__link:hover {
+    color: var(--vermelho-forte);
+    border-bottom: 2px solid var(--vermelho-forte);
+}
+.cabecalho__link {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-right: .7rem;
+    margin-bottom: 1.25rem;
+    margin-left: .7rem;
+}
+@media screen and (min-width: 1024px){
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
+    
+}
+
+/*atualiza conforme o browser utilizado
+REM é relativa a font-size do html, portanto, ex: se o html tem 16px = 1rem
+EM é relativa a propr font-size da tag mae, portanto, ex: 16px = 1em*/
